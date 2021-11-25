@@ -1,0 +1,33 @@
+.product_card{
+    width: 30%;
+    box-shadow: 0 0 5px #777;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+ 
+}
+img{
+    max-width: 100%;
+}
+.product_card .product_content{
+    padding: 10px;
+}
+ins{
+    color: red;
+    font-size: 25px;
+}
+del{
+    color:#777
+}
+button{
+    padding: 10px;
+    background-color:lightblue;
+    border: 2px solid lightblue;
+
+}
+input{
+    padding: 10px;
+}
+.addToCart{
+    margin-top: 10px;
+}
