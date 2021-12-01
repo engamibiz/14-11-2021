@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100vh; /* px - % - vh */            
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #purple{
+            background-color: purple;
+        }
+        #pink{
+            background-color: pink;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        nav{
+            position: fixed;
+            top:20px;
+            width: 100%;
+        }
+        a{
+            text-decoration:none ;
+            padding: 10px;
+            margin: 5px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .goTop{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#blue">Blue</a>
+        <a href="#purple">Purple</a>
+        <a href="#pink">Pink</a>
+    </nav>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="purple"></div>
+    <div id="pink"></div>
+
+    <a class="goTop" href="#red">Top</a>
+
+</body>
+</html>
