@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+       <nav>
+           <a href="home.html" >Home</a>
+           <a href="archive.html" class="active">Products</a>
+           <a href="contact.html">Contact Us</a>
+       </nav>
+   </header> 
+
+<div class="products">
+    <h1>All Products</h1>
+
+     <div class="product_card">
+        <i onclick="showPopUp()"  class="fas fa-eye"></i>
+        <i  class="fas fa-heart"></i>
+        <a href="product.html">
+        <img src="img/products/watch.jpg" alt="Classic Watch"
+         titles="Classic Watch">
+         </a>
+         <div class="product_content">
+              <a href="product.html">
+            <h2>Classic watch for men</h2>
+            </a>
+            <div><ins>1350 EGP</ins> <del>1450 EGP</del></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. At, neque.</p>
+            <div>
+                <button>-</button>
+                <input type="number">
+                <button>+</button>
+            </div>
+            <div>
+                <button class="addToCart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+   <div class="product_card">
+       <i class="fas fa-eye"></i>
+       <i class="fas fa-heart"></i>
+       <a href="product.html">
+           <img src="img/products/watch.jpg" alt="Classic Watch" titles="Classic Watch">
+       </a>
+       <div class="product_content">
+           <a href="product.html">
+               <h2>Classic watch for men</h2>
+           </a>
+           <div><ins>1350 EGP</ins> <del>1450 EGP</del></div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing
+               elit. At, neque.</p>
+           <div>
+               <button>-</button>
+               <input type="number">
+               <button>+</button>
+           </div>
+           <div>
+               <button class="addToCart">Add to cart</button>
+           </div>
+       </div>
+   </div>
+
+<div class="product_card">
+    <i class="fas fa-eye"></i>
+    <i class="fas fa-heart"></i>
+    <a href="product.html">
+        <img src="img/products/watch.jpg" alt="Classic Watch" titles="Classic Watch">
+    </a>
+    <div class="product_content">
+        <a href="product.html">
+            <h2>Classic watch for men</h2>
+        </a>
+        <div><ins>1350 EGP</ins> <del>1450 EGP</del></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. At, neque.</p>
+        <div>
+            <button>-</button>
+            <input type="number">
+            <button>+</button>
+        </div>
+        <div>
+            <button class="addToCart">Add to cart</button>
+        </div>
+    </div>
+</div>
+<div class="product_card">
+    <i class="fas fa-eye"></i>
+    <i class="fas fa-heart"></i>
+    <a href="product.html">
+        <img src="img/products/watch.jpg" alt="Classic Watch" titles="Classic Watch">
+    </a>
+    <div class="product_content">
+        <a href="product.html">
+            <h2>Classic watch for men</h2>
+        </a>
+        <div><ins>1350 EGP</ins> <del>1450 EGP</del></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. At, neque.</p>
+        <div>
+            <button>-</button>
+            <input type="number">
+            <button>+</button>
+        </div>
+        <div>
+            <button class="addToCart">Add to cart</button>
+        </div>
+    </div>
+</div>
+<div class="product_card">
+    <i class="fas fa-eye"></i>
+    <i class="fas fa-heart"></i>
+    <a href="product.html">
+        <img src="img/products/watch.jpg" alt="Classic Watch" titles="Classic Watch">
+    </a>
+    <div class="product_content">
+        <a href="product.html">
+            <h2>Classic watch for men</h2>
+        </a>
+        <div><ins>1350 EGP</ins> <del>1450 EGP</del></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. At, neque.</p>
+        <div>
+            <button>-</button>
+            <input type="number">
+            <button>+</button>
+        </div>
+        <div>
+            <button class="addToCart">Add to cart</button>
+        </div>
+    </div>
+</div>
+<div class="product_card">
+    <i class="fas fa-eye"></i>
+    <i class="fas fa-heart"></i>
+    <a href="product.html">
+        <img src="img/products/watch.jpg" alt="Classic Watch" titles="Classic Watch">
+    </a>
+    <div class="product_content">
+        <a href="product.html">
+            <h2>Classic watch for men</h2>
+        </a>
+        <div><ins>1350 EGP</ins> <del>1450 EGP</del></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. At, neque.</p>
+        <div>
+            <button>-</button>
+            <input type="number">
+            <button>+</button>
+        </div>
+        <div>
+            <button class="addToCart">Add to cart</button>
+        </div>
+    </div>
+</div>
+
+<div id="popUp" class="popUp">
+    <div id="cont" class="popUp_content">
+        <div class="content">
+            <div class="product_details">
+                <div class="product_images">
+                    <div class="progress">
+                        <div class="precentage"></div>
+                    </div>
+                </div><!-- product_images -->
+            </div> <!-- product_details -->
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function showPopUp(){
+    document.getElementById('popUp').style.display="block"
+    setTimeout(function(){
+        document.getElementById('cont').style.transform="scale(1)"
+    },100)
+    }
+</script>
+</body>
+</html>

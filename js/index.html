@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="hideMe()">Hide</button>
+    <p id="main" style="display: block!important;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem corporis eveniet tenetur reiciendis cumque in numquam? Facere voluptate molestiae aperiam nulla rerum doloribus necessitatibus asperiores. Quod rerum cumque aliquid!</p>
+    
+<script>
+    function hideMe(){
+        let main= document.getElementById('main')
+        main.style.display='none'
+        document.getElementById('btn').style.color='blue'
+
+        let x = 10
+        x = x + 5
+
+        alert(x)
+    }
+</script>
+
+</body>
+</html>
