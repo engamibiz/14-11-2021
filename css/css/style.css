@@ -1,0 +1,210 @@
+.product_card{
+    width: 30%;
+    box-shadow: 0 0 5px #777;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out , box-shadow 0.3s ease-in-out;
+ 
+}
+.products{
+    width: 80%;
+    margin:100px auto
+}
+img{
+    max-width: 100%;
+}
+.product_card .product_content{
+    padding: 10px;
+}
+ins{
+    color: red;
+    font-size: 25px;
+}
+del{
+    color:#777
+}
+button{
+    padding: 10px;
+    background-color:lightblue;
+    border: 2px solid lightblue;
+
+}
+input{
+    padding: 10px;
+}
+.addToCart{
+    margin-top: 10px;
+}
+.product_card i{
+    font-size: 30px;
+    color:lightblue;
+    background-color: #000000a8;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right:-65px;
+    top:5px;
+    transition: right 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.product_card .fa-heart{
+    top:70px;
+      transition-delay: 0.1s;
+
+}
+.product_card:hover i{
+right:  10px;
+}
+.product_card i:hover{
+background-color: white;
+color:#222
+}
+
+header nav{
+ width: 80%;
+ margin: auto; 
+ position: relative;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+header a{
+    font-size: 20px;  
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+header a:hover{
+    border-bottom:1px solid brown;
+   transform:translateY(-7px);    
+}
+header{
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 0 0 5px #333;
+}
+.active{
+    border-bottom:1px solid brown;
+}
+.product_card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px #333 ;
+    background-color: #000;
+    color:white
+}
+.product_card:hover a{
+    color:white 
+}
+/*  === product page === */
+section{
+padding: 100px 0;
+}
+section.title{
+ background-image: url('../img/bg1.jpg');   
+ position: relative;
+ height: 300px;
+}
+.title .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 1px;
+    text-align: center;
+}
+.overlay h1{
+color: #fff;
+font-size: 50px;
+text-transform: uppercase;
+margin-top: 150px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.product_details{
+    width: 80%;
+    margin: 50px auto;
+}
+.product_images{
+    background-image: url('../img/products/watch2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 40%;
+    background-position: center center;
+    animation-name: imgSwitching;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+.product_images:hover{
+    opacity: 0.7;
+}
+@keyframes imgSwitching {
+    0%{background-image: url('../img/products/watch2.jpg');}
+    50%{background-image: url('../img/products/watch3.jpg');}
+}
+.progress{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #000000a8;
+}
+.precentage{
+    width: 0%;
+    background-color: #ffffffb3;
+    height: 10px;
+     animation-name: progress;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes progress{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.popUp{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000a1;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 9999;
+    display: none;
+    
+}
+#cont{
+    width: 60vw;
+    margin: 100px auto;
+    min-height: 100px;
+    max-height: calc(100vh - 200px);
+    background-color: white; 
+    overflow: auto;   
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
