@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">    
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body{
+            height: 1000px;
+        }
+    </style>
+    <title>Ecommerce</title>
+  </head>
+  <body class="bg-light">
+    <header class="fixed-top p-3 shadow-sm">
+      <!-- mobile menu -->
+        <div class="container-fluid d-lg-none">
+            <div class="row">
+                <div class="col-2 ">
+                    <img src="img/logo-small.png" class="img-fluid" alt="Ecommerce Logo" title="Ecommerce Logo">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6 ">
+                  <div class="input-group mb-3 searchBox">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" class="form-control" placeholder="Search .." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2 ">
+                    <a class="menuIcon pt-1 d-inline-block" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                      </a>
+                </div>
+            </div>
+        </div>
+        <!-- desktop menu -->
+        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+          <div class="container">
+            <a class="navbar-brand" href="#">                    
+              <img src="img/logo-small.png" class="img-fluid" alt="Ecommerce Logo" title="Ecommerce Logo"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <div class="input-group mb-3 searchBox w-25">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input type="text" class="form-control bg-transparent" placeholder="Search .." aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+<section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bg1.jpg" class="d-block w-100 vh-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bg2.jpg" class="d-block w-100 vh-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bg3.jpg" class="d-block w-100 vh-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bg4.jpg" class="d-block w-100 vh-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section class="categories my-5">
+  <div class="container">
+    <h2>Product Categories</h2>
+    <div class="row g-3 text-center">
+        <div class="col-4 col-lg-2 ">
+          <div class="bg-white shadow p-2 text-danger">
+            <i class="far fa-heart fa-3x"></i>
+            <h3>Womens</h3>
+          </div>
+        </div>
+        <div class="col-4 col-lg-2 ">
+          <div class="bg-white shadow p-2 text-primary">
+            <i class="fas fa-mug-hot fa-3x"></i>
+            <h3>Juice</h3>
+          </div>
+        </div>
+        <div class="col-4 col-lg-2 ">
+          <div class="bg-white shadow p-2 text-success">
+            <i class="fas fa-gamepad fa-3x"></i>
+            <h3>Games</h3>
+          </div>
+        </div>
+        <div class="col-4 col-lg-2 ">
+          <div class="bg-white shadow p-2 text-danger">
+            <i class="fas fa-hamburger fa-3x"></i>
+            <h3>Food</h3>
+          </div>
+        </div>
+        <div class="col-4 col-lg-2 ">
+          <div class="bg-white shadow p-2 text-warning">
+            <i class="fas fa-sun fa-3x"></i>
+            <h3>Travel</h3>
+          </div>
+        </div>
+        <div class="col-4 col-lg-2 ">
+          <div class="bg-white shadow p-2 text-secondary">
+            <i class="fas fa-headphones fa-3x"></i>
+            <h3>Accessories</h3>
+          </div>
+        </div>
+       
+       
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container text-center">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product1</h5>
+            <p class="card-text"><ins>2500</ins> <del>1750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product2</h5>
+            <p class="card-text"><ins>3500</ins> <del>3750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product1</h5>
+            <p class="card-text"><ins>2500</ins> <del>1750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product2</h5>
+            <p class="card-text"><ins>3500</ins> <del>3750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product1</h5>
+            <p class="card-text"><ins>2500</ins> <del>1750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product2</h5>
+            <p class="card-text"><ins>3500</ins> <del>3750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product1</h5>
+            <p class="card-text"><ins>2500</ins> <del>1750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product2</h5>
+            <p class="card-text"><ins>3500</ins> <del>3750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product1</h5>
+            <p class="card-text"><ins>2500</ins> <del>1750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product2</h5>
+            <p class="card-text"><ins>3500</ins> <del>3750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product1</h5>
+            <p class="card-text"><ins>2500</ins> <del>1750</del></p>
+            <button class="addTo btn btn-primary" 
+            data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product2</h5>
+            <p class="card-text"><ins>3500</ins> <del>3750</del></p>
+            <button class="addTo btn btn-primary" data-img="https://via.placeholder.com/300x150">add to cart</button>
+          
+          </div>
+        </div>
+      </div>
+   
+    </div>
+    
+  </div>
+</section>
+
+
+
+    <!-- side menu -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="cartIcon text-info position-fixed bg-dark 
+rounded-circle">
+  <i class="fas fa-shopping-cart"></i>
+  <span class="badge bg-danger position-absolute">5</span>
+</div>
+
+<div class="cartbox text-white position-fixed rounded bg-dark ">
+  <div class="text-center text-uppercase border-bottom border-white py-2">Cart</div>
+  <div class="cartbody border-bottom border-white p-2">
+    <div class="container-fluid">
+     
+    </div>
+  </div>
+  <div class="cartfoot text-center py-3">
+      Total : 6000
+  </div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

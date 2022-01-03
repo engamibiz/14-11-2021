@@ -1,0 +1,96 @@
+.bar{
+    width: 20px;
+    height: 2px;
+    background-color: #555;
+    margin-bottom: 7px;
+    border-radius: 20px;
+}
+.bar:nth-child(2){
+    width: 10px;
+    transition: width 0.3s ease-in-out;
+}
+.menuIcon:hover .bar:nth-child(2){
+    width: 20px;
+}
+.searchBox .btn-outline-secondary{
+    border: 1px solid #ddd ;
+    border-right: none ;
+}
+.searchBox input{
+    border: 1px solid #ddd ;
+    border-left:none ;
+}
+header{
+    transition: background-color 0.3s ease-in-out,
+    padding 0.6s ease-in-out;
+}
+.categories .bg-white{
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.categories .bg-white:hover{
+    background-color: darkblue !important;
+    color:white !important
+}
+.owl-carousel .owl-prev ,.owl-carousel .owl-next{
+    position: absolute;
+    
+    top: 25%;
+    background-color: #310d7685 !important;
+    padding: 20px !important;
+    border-radius: 50%;
+    line-height: 17px;
+}
+.owl-carousel .owl-prev{
+    left: -50px;
+}
+.owl-carousel .owl-next{
+    right: -50px;
+}
+.owl-carousel .owl-prev span,.owl-carousel .owl-next span{
+    position: absolute;
+    font-size: 50px;
+    top: -25px;
+    left: 11px;
+    color: white;
+}
+.cartIcon{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    left: -75px;
+    bottom:20px;
+    z-index: 99;
+    padding-top: 8px;
+    transition: transform 0.7s ease-in-out,
+    left 0.7s ease-in-out;
+}
+.cartIcon span{
+    right: -5px;
+    bottom: -5px;
+    font-size: 15px;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+
+}
+.cartbox{
+    left:50px;
+    bottom:50px;
+    width: 300px;
+    z-index: 100;
+    display: none;
+    
+}
+@media (max-width : 992px){
+    #carouselExampleIndicators img{
+       height: 50vh !important;
+     
+    }
+    #carouselExampleIndicators{
+        margin-top: 88px;
+    }
+}
