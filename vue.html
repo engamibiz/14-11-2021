@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{ message }}
+    <label>Name</label>
+    <input v-model="name">
+    <label>URL</label>
+    <input v-model="url">
+    <a v-bind:href="url" v-if="name">{{ name }}</a>
+</div>
+
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            name:'Facebook',
+            url:'http://facebook.com'
+        }
+    })
+
+
+</script>
+</body>
+</html>

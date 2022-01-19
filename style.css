@@ -1,0 +1,79 @@
+body , a{
+    color:#555;
+}
+.container{
+    width: 750px;
+    margin: auto;
+}
+.task{
+    box-shadow: 0 0 5px #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-left:10px solid gray;
+    margin-bottom: 20px;
+    position: relative;
+}
+.completed{
+    border-left-color:green;
+}
+.icons{
+    position: absolute;
+    top:40%;
+    right: 20px;
+    font-size: 30px;
+}
+.icons i{
+    margin-right: 10px;
+}
+.completed .fa-check{
+    color:green;
+}
+.fa-trash{
+    color:red;
+}
+.fa-edit{
+    color:blue;
+}
+.createPopUp{
+    position: fixed;
+    background-color: #00000099;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top:0;
+}
+.createContent{
+    width: 50vw;
+    background-color: white;
+    margin: 25vh auto ;
+    max-height: 50vh;
+    overflow: auto;
+    padding: 30px 50px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+*{
+    box-sizing: border-box;
+}
+label,input,textarea{
+    display: block;
+}
+input, textarea,.submit{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.submit{
+    width: 50%;
+    background-color:plum;
+    color:darkmagenta;
+}
